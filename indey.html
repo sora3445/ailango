@@ -22,16 +22,24 @@ pre {
   padding: 1rem;
 }
 
+
+body {
+    margin: 0;            /* Reset default margin */
+}
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: #fff;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+
 </style>
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<h1>Zip File Reader</h1>
-<form>
-  <label for="form-file">File:</label>
-  <input type="file" id="form-file" name="files[]" multiple>
-</form>
+ 
 <pre id="output" width="6" height="5"  style="display: none;" ></pre>
 <!-- partial -->
 
@@ -72,5 +80,5 @@ pre {
 
 </body>
 
-<iframe width="600" height="500" srcdoc="<html><body>Hello, <b>world</b>.</body></html>"></iframe>
+<iframe width="100%" height="100%" srcdoc=""></iframe>
 </html>
